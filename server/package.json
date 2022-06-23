@@ -6,7 +6,9 @@
   "dependencies": {
     "apollo-server": "^3.6.4",
     "apollo-server-express": "^3.6.4",
+    "dotenv": "^16.0.1",
     "express": "^4.17.3",
+    "firebase": "^9.8.3",
     "graphql": "^16.3.0",
     "uuid": "^8.3.2"
   },
