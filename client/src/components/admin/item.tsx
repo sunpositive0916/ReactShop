@@ -48,10 +48,7 @@ const AdminItem = ({
   );
 
   const { mutate: deleteProduct } = useMutation(
-    ({ id }: { id: string }) =>
-      graphqlFetcher(DELETE_PRODUCT, {
-        id,
-      }),
+    (id: string) => graphqlFetcher(DELETE_PRODUCT, { id }),
     {
       onSuccess: () => {
         queryClient.invalidateQueries(QueryKeys.PRODUCTS, {
@@ -70,7 +67,7 @@ const AdminItem = ({
   };
 
   const deleteItem = () => {
-    deleteProduct({ id });
+    deleteProduct(id);
   };
 
   if (isEditing)
