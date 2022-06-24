@@ -1,9 +1,6 @@
 {
   "name": "ReactShop",
   "version": "1.0.0",
-  "engines": {
-    "node": "14.x"
-  },
   "main": "index.js",
   "repository": "https://github.com/sunpositive0916/ReactShop.git",
   "author": "MOON <sunpositive7@gmail.com>",
@@ -13,7 +10,9 @@
     "client",
     "server"
   ],
-  "client": "yarn workspace client dev",
-  "server": "yarn workspace server dev",
-  "start": "cd server && npm run serve"
+  "scripts": {
+    "client": "yarn workspace client dev",
+    "server": "yarn workspace server dev",
+    "start": "cd server && npm run serve"
+  }
 }
